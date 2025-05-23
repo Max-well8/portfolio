@@ -65,15 +65,17 @@
 
   <section id="comment">
     <h2>Leave a Comment</h2>
-    <form action="submit_comment.php" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="comment">Comment:</label>
-      <textarea id="comment" name="comment" required></textarea>
-
-      <input type="submit" value="Submit" />
-    </form>
+    <form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
   </section>
 
   <button id="backToTop" title="Back to Top">↑</button>
